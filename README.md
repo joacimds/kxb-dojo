@@ -14,6 +14,8 @@ Nettsiden er satt opp med:
 
 Den er deployet med Vercel og ligger under -> https://kxb-dojo.vercel.app/
 
+Den nye App Router løsningen i Next.js v.13 brukes også. Den kan du lese mer om her -> https://nextjs.org/docs/app
+
 Sanity Studio er embedded i løsningen, slik at Next og Sanity Studio ligger under én URL.
 Det vil med andre ord si at man har tilgang til Sanity Studio for prosjektet ved å gå inn på https://kxb-dojo.vercel.app/admin
 
