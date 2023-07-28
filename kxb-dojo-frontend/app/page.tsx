@@ -10,15 +10,15 @@ export default async function Home() {
         <h1 className="grid justify-center text-4xl lg:text-7xl pb-10">
           Faggruppens hjemmeside
         </h1>
-        <div className="grid grid-cols-3 lg:grid-cols-6 gap-1 pl-8 pr-8">
+        <div className="grid grid-cols-3 lg:grid-cols-6 pl-8 pr-8">
           {members.map((member) => (
-            <div className="" key={member._id}>
+            <div key={member._id}>
               {member.image && (
                 <Image
                   src={member.image}
                   alt={member.name}
-                  width={100}
-                  height={100}
+                  width={60}
+                  height={60}
                   className="mx-auto border border-black rounded-full"
                 />
               )}
@@ -27,7 +27,7 @@ export default async function Home() {
           ))}
         </div>
         <div>
-          {/* TODO: Add calendar or something to show when next dojo or fagkveld is. */}
+          {/* TODO: Countdown until next event such as dojo or fagkveld? */}
         </div>
       </div>
     </>

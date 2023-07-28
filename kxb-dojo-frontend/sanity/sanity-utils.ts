@@ -3,16 +3,10 @@
 
 import { Member } from "@/types/Member";
 import { createClient, groq } from "next-sanity";
+import clientConfig from "./config/client-config";
 
 export async function getMembers(): Promise<Member[]> {
-  const client = createClient({
-    projectId: "hir8lmw6",
-    dataset: "production",
-    apiVersion: "2023-07-26",
-    useCdn: true,
-  });
-
-  return client.fetch(groq`*[_type == "member"]{
+  return createClient(clientConfig).fetch(groq`*[_type == "member"]{
     _id,
     _createAt,
     name,
