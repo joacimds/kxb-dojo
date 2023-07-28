@@ -9,6 +9,7 @@ export async function getMembers(): Promise<Member[]> {
     projectId: "hir8lmw6",
     dataset: "production",
     apiVersion: "2023-07-26",
+    useCdn: true,
   });
 
   return client.fetch(groq`*[_type == "member"]{
