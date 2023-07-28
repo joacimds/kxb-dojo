@@ -1,3 +1,5 @@
+// Config to generate Sanity Studio under /admin
+
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 import schemas from "./sanity/schemas";
