@@ -1,10 +1,10 @@
 import { PortableTextBlock } from "sanity";
 
-export type Member = {
+export type Event = {
   _id: string;
   _createdAt: Date;
-  name: string;
-  slug: string;
-  image: string;
+  title: string;
+  type: string;
+  date: Date;
   about: PortableTextBlock[];
 };

@@ -6,7 +6,7 @@ export default async function Home() {
 
   return (
     <>
-      <div className="mx-auto">
+      <div>
         <h1 className="grid justify-center text-4xl lg:text-7xl pb-10">
           Faggruppens hjemmeside
         </h1>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./globals.css";
 import type { Metadata } from "next";
 
@@ -13,7 +14,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="mx-auto">
+        <header>
+          <Link href={""}></Link>
+        </header>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

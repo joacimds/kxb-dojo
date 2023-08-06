@@ -30,6 +30,4 @@ const event = {
   ],
 };
 
-function slugifyEvent(input: String) {}
-
 export default event;
