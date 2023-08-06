@@ -15,9 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="mx-auto">
-        <header>
-          <Link href={""}></Link>
-        </header>
+        <header>{/* TODO: Create navigational bar */}</header>
         <main>{children}</main>
       </body>
     </html>

@@ -3,6 +3,8 @@ import { getEvents } from "@/sanity/sanity-utils";
 export default async function Events() {
   const events = await getEvents();
 
+  // TODO: Create styling for events that will be listed.
+
   return (
     <>
       <div>
