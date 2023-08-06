@@ -9,12 +9,6 @@ const event = {
       type: "string",
     },
     {
-      name: "slug",
-      title: "Slug",
-      type: "slug",
-      options: { source: "name" },
-    },
-    {
       name: "type",
       title: "Type",
       type: "string",
@@ -35,5 +29,7 @@ const event = {
     },
   ],
 };
+
+function slugifyEvent(input: String) {}
 
 export default event;
