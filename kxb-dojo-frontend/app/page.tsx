@@ -7,9 +7,6 @@ export default async function Home() {
   return (
     <>
       <div>
-        <h1 className="grid justify-center text-4xl lg:text-7xl pb-10">
-          Faggruppens hjemmeside
-        </h1>
         <div className="grid grid-cols-3 lg:grid-cols-6 pl-8 pr-8">
           {members.map((member) => (
             <div key={member._id}>

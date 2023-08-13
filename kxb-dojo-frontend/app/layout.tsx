@@ -15,8 +15,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="mx-auto">
-        <header>{/* TODO: Create navigational bar */}</header>
-        <main>{children}</main>
+        <header className="h-12 lg:h-24 bg-digital-black text-digital-white">
+          <Link href="/" className="text-4xl lg:text-7xl">
+            KXB Dojo
+          </Link>
+          <Link href="/events" className="text-xl lg:text-4xl">
+            Arrangementer
+          </Link>
+        </header>
+        <main className="h-screen bg-sand pt-4 lg:pt-8">{children}</main>
       </body>
     </html>
   );
