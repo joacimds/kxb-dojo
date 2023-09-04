@@ -22,6 +22,9 @@ export default function RootLayout({
           <Link href="/events" className="text-xl lg:text-4xl">
             Arrangementer
           </Link>
+          <Link href="/questions" className="text-xl lg:text-4xl">
+            FAQs
+          </Link>
         </header>
         <main className="h-screen bg-sand pt-4 lg:pt-8">{children}</main>
       </body>
