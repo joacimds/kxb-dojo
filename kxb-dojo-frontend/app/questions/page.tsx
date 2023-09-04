@@ -1,4 +1,5 @@
 import { getQuestions } from "@/sanity/sanity-utils";
+import { PortableText } from "@portabletext/react";
 
 export default async function Questions() {
   const qas = await getQuestions();
@@ -9,7 +10,7 @@ export default async function Questions() {
         {qas.map((qa) => (
           <div key={qa._id}>
             <div>{qa.question}</div>
-            <div>{qa.answer.toString()}</div>
+            <PortableText value={qa.answer}></PortableText>
           </div>
         ))}
       </div>
